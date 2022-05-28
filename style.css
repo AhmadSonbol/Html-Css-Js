@@ -1,1 +1,62 @@
+.navbar {
+    display: block;
+    background-color:brown;
+}
 
+.alert.alert-success{
+    position: fixed;
+    
+}
+
+section {
+    align-items: center;
+    /* background-color: darkturquoise; */
+    display: flex;
+    flex-flow: row;
+    /* flex-wrap: wrap; */
+    /* flex-direction: rox; */
+    justify-content: center;
+}
+
+section div{
+    height: 200px;
+    background: tomato;
+    color: white;
+    padding: 30px;
+    border-radius: 14px;
+    min-width: 250px;
+    box-shadow: 12px 0px 32px -12px black;
+    margin-left: -130px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+section div:hover{
+    transform: translateY(-16px) rotate(-3deg);
+}
+section div:hover ~ div{
+    transform: translateX(130px);
+}
+
+.table{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196f3;
+    padding: 10px;
+    /* border: solid #0368ff 4px; */
+}
+.grid-item{
+    border: solid 1px rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+}
+
+.grid-item:hover{
+    cursor: pointer;
+    transform: translateY(-3px) rotate(1deg);
+    background-color:rgba(255, 255, 255, 0.95);
+        box-shadow: 12px 0px 32px -12px black;
+
+}
